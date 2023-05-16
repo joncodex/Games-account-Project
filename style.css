@@ -76,6 +76,11 @@ button {
     float: right;
 }
 
+button:hover {
+    background-color: rgb(3, 3, 85);
+    cursor: pointer;
+}
+
 .newcontainer {
     width: 600px;
     border: 2px solid black;
