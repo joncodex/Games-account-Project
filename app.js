@@ -7,6 +7,18 @@ function signup() {
  
 
     let email= document.getElementById('email').value;
+
+    if (document.getElementById('email').value == "") {
+        document.getElementById('alert').classList.remove('d-none')
+        document.getElementById('alert').innerHTML = "email must be filled out"
+        setTimeout (() => {document.getElementById('alert').classList.add('d-none')}, 2000)
+
+          return false;
+        }
+
+        else {
+            
+       
     
    
 
@@ -32,6 +44,9 @@ function signup() {
         setTimeout (() => {alert_danger.classList.add('d-none')}, 2000)
      
     }
+
+    
+}
    
         
 
